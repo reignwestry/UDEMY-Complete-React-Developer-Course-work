@@ -1,0 +1,7 @@
+{
+    "git.ignoreLimitWarning": true,
+    "workbench.tree.renderIndentGuides": "always",
+    "editor.wrappingIndent": "indent",
+    "html.format.indentHandlebars": true,
+    "html.format.indentInnerHtml": true
+}

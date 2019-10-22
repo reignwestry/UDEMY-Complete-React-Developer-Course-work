@@ -1,0 +1,12 @@
+{
+  "name": "03-Indecision-App",
+  "version": "1.0.0",
+  "description": "React App Template",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Reign Westry",
+  "dependencies": {
+    "babel-preset-env": "1.5.2",
+    "babel-preset-react": "6.24.1"
+  }
+}
