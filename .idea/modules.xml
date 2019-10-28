@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/01-Udemy-Complete-React-Developer-Course.iml" filepath="$PROJECT_DIR$/.idea/01-Udemy-Complete-React-Developer-Course.iml" />
+      <module fileurl="file://$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/Expensify_App.iml" filepath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/Expensify_App.iml" />
     </modules>
   </component>
 </project>
