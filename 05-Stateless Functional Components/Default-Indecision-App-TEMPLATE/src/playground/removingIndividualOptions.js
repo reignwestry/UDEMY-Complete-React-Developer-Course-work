@@ -46,7 +46,6 @@ class IndecisionApp extends React.Component {
 
     }
     handleAddOption(option){
-
         if(!option) {
             return 'Enter valid value to add item'
 
@@ -126,13 +125,12 @@ const Option = (props) => {
     return (
         <div>
             { props.optionText }
-            <button 
+            <button
                 onClick={
                     /*note inline Arrow function */
                     (e) => {
                     props.handleDeleteOption( props.optionText )
-                }}
-            > remove </button>
+                }}> remove </button>
         </div>
     );
 };

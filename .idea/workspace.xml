@@ -2,74 +2,74 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ac7c592-5a67-44cc-ac78-7ba89c62077e" name="Default Changelist" comment="READ.md update">
-      <change afterPath="$PROJECT_DIR$/05-Stateless Functional Components/Default-Indecision-App-TEMPLATE/src/playground/addDefaultPropsToCounterApp-Challenge.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/05-Stateless Functional Components/Default-Indecision-App-TEMPLATE/src/playground/removingIndividualOptions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/05-Stateless Functional Components/Default-Indecision-App-TEMPLATE/src/playground/defaultPropValues.js" beforeDir="false" afterPath="$PROJECT_DIR$/05-Stateless Functional Components/Default-Indecision-App-TEMPLATE/src/playground/defaultPropValues.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/.babelrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/jest.config.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-React Components/Default-Indecision-App-TEMPLATE/public/scripts/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/04-React Components/Default-Indecision-App-TEMPLATE/public/scripts/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05-Stateless Functional Components/Default-Indecision-App-TEMPLATE/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/05-Stateless Functional Components/Default-Indecision-App-TEMPLATE/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05-Stateless Functional Components/Default-Indecision-App-TEMPLATE/src/playground/removingIndividualOptions.js" beforeDir="false" afterPath="$PROJECT_DIR$/05-Stateless Functional Components/Default-Indecision-App-TEMPLATE/src/playground/removingIndividualOptions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/.babelrc" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/.babelrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/jest.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/jest.config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/public/bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/public/images/favicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/actions/expenses.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/actions/filters.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/components/AddExpensePage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/components/EditExpensePage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/components/ExpenseDashboardPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/components/ExpenseForm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/components/ExpenseList.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/components/ExpenseListFilters.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/components/ExpenseListItem.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/components/Header.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/components/HelpPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/components/NotFoundPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/playground/destructuring.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/playground/hoc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/playground/redux-101.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/playground/redux-expensify.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/reducers/expenses.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/reducers/filters.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/routers/AppRouter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/selectors/expenses.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/store/configureStore.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/styles/base/_base.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/styles/base/_settings.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/styles/styles.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/tests/__mocks__/moment.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/tests/actions/expenses.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/tests/actions/filters.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/tests/components/AddExpensePage.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/tests/components/EditExpensePage.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/tests/components/ExpenseDashboardPage.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/tests/components/ExpenseForm.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/tests/components/ExpenseList.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/tests/components/ExpenseListFilters.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/tests/components/ExpenseListItem.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/tests/components/Header.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/tests/components/NotFoundPage.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/tests/components/__snapshots__/AddExpensePage.test.js.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/tests/components/__snapshots__/EditExpensePage.test.js.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/tests/components/__snapshots__/ExpenseDashboardPage.test.js.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/tests/components/__snapshots__/ExpenseForm.test.js.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/tests/components/__snapshots__/ExpenseList.test.js.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/tests/components/__snapshots__/ExpenseListFilters.test.js.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/tests/components/__snapshots__/ExpenseListItem.test.js.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/tests/components/__snapshots__/Header.test.js.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/tests/components/__snapshots__/NotFoundPage.test.js.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/tests/fixtures/expenses.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/tests/fixtures/filters.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/tests/reducers/expenses.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/tests/reducers/filters.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/tests/selectors/expenses.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/webpack.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/public/images/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/public/images/favicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/actions/expenses.js" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/src/actions/expenses.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/actions/filters.js" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/src/actions/filters.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/src/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/components/AddExpensePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/src/components/AddExpensePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/components/EditExpensePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/src/components/EditExpensePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/components/ExpenseDashboardPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/src/components/ExpenseDashboardPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/components/ExpenseForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/src/components/ExpenseForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/components/ExpenseList.js" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/src/components/ExpenseList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/components/ExpenseListFilters.js" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/src/components/ExpenseListFilters.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/components/ExpenseListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/src/components/ExpenseListItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/src/components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/components/HelpPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/src/components/HelpPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/components/NotFoundPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/src/components/NotFoundPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/playground/destructuring.js" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/src/playground/destructuring.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/playground/hoc.js" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/src/playground/hoc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/playground/redux-101.js" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/src/playground/redux-101.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/playground/redux-expensify.js" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/src/playground/redux-expensify.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/reducers/expenses.js" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/src/reducers/expenses.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/reducers/filters.js" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/src/reducers/filters.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/routers/AppRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/src/routers/AppRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/selectors/expenses.js" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/src/selectors/expenses.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/store/configureStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/src/store/configureStore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/styles/base/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/src/styles/base/_base.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/styles/base/_settings.scss" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/src/styles/base/_settings.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/styles/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/src/styles/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/tests/__mocks__/moment.js" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/src/tests/__mocks__/moment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/tests/actions/expenses.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/src/tests/actions/expenses.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/tests/actions/filters.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/src/tests/actions/filters.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/tests/components/AddExpensePage.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/src/tests/components/AddExpensePage.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/tests/components/EditExpensePage.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/src/tests/components/EditExpensePage.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/tests/components/ExpenseDashboardPage.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/src/tests/components/ExpenseDashboardPage.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/tests/components/ExpenseForm.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/src/tests/components/ExpenseForm.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/tests/components/ExpenseList.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/src/tests/components/ExpenseList.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/tests/components/ExpenseListFilters.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/src/tests/components/ExpenseListFilters.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/tests/components/ExpenseListItem.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/src/tests/components/ExpenseListItem.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/tests/components/Header.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/src/tests/components/Header.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/tests/components/NotFoundPage.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/src/tests/components/NotFoundPage.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/tests/components/__snapshots__/AddExpensePage.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/src/tests/components/__snapshots__/AddExpensePage.test.js.snap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/tests/components/__snapshots__/EditExpensePage.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/src/tests/components/__snapshots__/EditExpensePage.test.js.snap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/tests/components/__snapshots__/ExpenseDashboardPage.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/src/tests/components/__snapshots__/ExpenseDashboardPage.test.js.snap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/tests/components/__snapshots__/ExpenseForm.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/src/tests/components/__snapshots__/ExpenseForm.test.js.snap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/tests/components/__snapshots__/ExpenseList.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/src/tests/components/__snapshots__/ExpenseList.test.js.snap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/tests/components/__snapshots__/ExpenseListFilters.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/src/tests/components/__snapshots__/ExpenseListFilters.test.js.snap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/tests/components/__snapshots__/ExpenseListItem.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/src/tests/components/__snapshots__/ExpenseListItem.test.js.snap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/tests/components/__snapshots__/Header.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/src/tests/components/__snapshots__/Header.test.js.snap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/tests/components/__snapshots__/NotFoundPage.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/src/tests/components/__snapshots__/NotFoundPage.test.js.snap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/tests/fixtures/expenses.js" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/src/tests/fixtures/expenses.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/tests/fixtures/filters.js" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/src/tests/fixtures/filters.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/tests/reducers/expenses.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/src/tests/reducers/expenses.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/tests/reducers/filters.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/src/tests/reducers/filters.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/src/tests/selectors/expenses.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/src/tests/selectors/expenses.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13- Deploying Your Apps/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/REACT-CHEATSHEET.txt" beforeDir="false" afterPath="$PROJECT_DIR$/REACT-CHEATSHEET.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -88,16 +88,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App" />
   </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App/package.json" />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1RcFTTk4Duw9RPSJxwadtA3ZwCp" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -137,6 +142,8 @@
       <workItem from="1571396142763" duration="2289000" />
       <workItem from="1571726446882" duration="727000" />
       <workItem from="1571727231342" duration="15723000" />
+      <workItem from="1573465471445" duration="480000" />
+      <workItem from="1573466458597" duration="683000" />
     </task>
     <task id="LOCAL-00001" summary="Project Update &amp; Added Section 05">
       <created>1571731268433</created>
