@@ -82,3 +82,25 @@ avoid global modules
                             "react"
                         ]
                 }
+
+++ INSTALL Webpack-dev-server
+    1. RUN yarn add webpack-dev-server
+    2. ADD config to webpack.config.js:
+           devServer: {
+                contentBase: path.join(__dirname, 'public')
+           }
+
+    3. configure package.json:
+        - REMOVE build-babel command
+        - CONSOLE: RUN =>
+            yarn run dev-server
+ # After CAN REMOVE bundle.js to make the server & app snappier and lighter.
+
+# ADD ES6 Properties
+    1. NPM INSTALL
+        yarn add babel-plugin-transform-class-properties
+    2. In .babelrc ADD:
+        "plugins": [
+           "transform-class-properties"
+        ]
+

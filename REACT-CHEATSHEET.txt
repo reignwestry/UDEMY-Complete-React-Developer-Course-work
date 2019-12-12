@@ -104,3 +104,12 @@ var user = {
     age: 35,
     location: 'Atanta'
 };
+
+//note ES6 imports
+    1. ADD FILES
+        A) import ' filename'
+
+COMPONENTS
+===========
+
++ One component per file
