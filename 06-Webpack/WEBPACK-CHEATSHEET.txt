@@ -1,0 +1,84 @@
+WEBPACK
+
+=== breaks all the files in the applications into their own little islands and then they communicate through ES6
+
+
+avoid global modules
+=== global modules are not included in package.json
+=== have to type the entire module in the command line
+
+//note INSTALL WEBPACK
+1. run yarn add webpack
+2. Add "build": " webpack --watch " to package.json
+3. Configure Webpack   (//note ADD entry point, output)
+    A. CREATE webpack.config.js in root directory of app
+        //INSIDE webpack config.js
+         //note 1. ADD entry point
+
+            module.exports = {
+                entry: './src/app.js',
+
+            };
+
+         //note 2. tell it the absolute path to output the build inside the public directory
+                A. ADD absolute path and filename to create
+                B. Add " console.log(__dirname) " to webpack.config.js;
+                C. (TEST RUN) " node webpack.config.js " in console
+                D. ADD absolute path to public folder to path
+                    //note __dirname == gives the absolute path to the current directory
+
+                    //note path.join === joins all arguments together and normalizes the resulting path
+                        //note path.join('foo', 'bar', 'baz/asdf', 'quuz', '..');
+                        //note RETURNS '/foo/bar/baz/asdf'
+
+                 module.exports = {
+                     entry: './src/app.js',
+                     output: {
+                         path: path.join( __dirname, 'public' ),
+                         filename: 'bundle.js'
+                     }
+                 };
+         //note 3. REMOVE the scripts directory and any react script tags in index.html
+
+          //NOTE webpack console output
+            //HASH == verifies the integrity of the process
+            //VERSION == verifies the webpack version used
+            //TIME == the time it took to compile
+            //ASSET == the files compiled by webpack
+            //SIZE == each file size
+            // CHUNKS ==
+            // CHUNK NAMES ==
+         //note START WEBPACK RUN " yarn run build "
+
+   + INSTALL a WEBPACK LOADER FOR BABEL
+    + 1. INSTALL babel-core & babel-LOADER
+        yarn add babel-core babel-loader
+
+    + 2.SETUP the loader
+       + * INSIDE webpack.config.js
+        A. ADD a new module
+           module: {
+                rules:  [{
+
+                    // use babel-loader
+                    loader: 'babel-loader',
+
+                    //regular expression
+                    // + escape the \ file format .
+                    // "\.js$" = any files that end with .js run it through babel-loader
+                    test: /\.js$/,
+
+                    //exclude = any files from the process
+                    exclude: /node_modules/
+                }]
+           }
+
+        + 3. TELL BABEL to use the env, react presets
+            A. CREATE .babelrc file in the root directory.
+            B. ADD "presets" to .babelrc
+                {
+                    "presets" : [
+                            "env",
+                            "react"
+                        ]
+                }
