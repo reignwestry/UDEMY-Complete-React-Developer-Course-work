@@ -2,6 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/07-Using-a-Third-Pary-Component" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/13- Deploying Your Apps" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/13- Deploying Your Apps/131-Integrating_Git_Into_Our_Project/Expensify_App" vcs="Git" />
   </component>

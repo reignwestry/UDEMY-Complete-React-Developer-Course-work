@@ -1,36 +1,6 @@
-/*
-    + SAVING AND LOADING OPTIONS DATA
-    ++++++++++++++++++++++++++++++++
-    ++++++++++++++++++++++++++++++++
-
-    + Local Storage = key value store
-    localStorage.setItem('name', 'Reign'); saves the variable but only string data = Reign
-    localStorage.getItem('name'); gets the name variable
-    stays through page loads
-    localStorage.removeItem('name')  removes an item from the storage
-    localStorage.clear() clears all values in localStorage
-
-    JSON is a string representation of a Javascript Object
-
-    all arrays or objects have to be converted to JSON
-
-    + JSON.stringify === take regular objects and convert it to the string representation
-    + JSON.parse === takes a string representation and convert it to a true Javascript Object
-
-    JSON.stringify({ age: json })
-    "{\"age\":26}"
-
-    const json = JSON.stringify({ age: 26 })
-    json === "{\"age\":26}"
-
-    JSON.parse(json) === OBJECT --> age: 26
-
-    //CAN ACCESS PROPERTIES LIKE
-    JSON.parse(json).age === 26
-
-*/
-
-
+// Grab the add function from the add.js file in the utils folder
+// Grab React from the react npm module
+// add(2, 4)
 
 class IndecisionApp extends React.Component {
   constructor(props) {
@@ -40,38 +10,29 @@ class IndecisionApp extends React.Component {
     this.handleAddOption = this.handleAddOption.bind(this);
     this.handleDeleteOption = this.handleDeleteOption.bind(this);
     this.state = {
-      options: props.options
+      options: []
     };
   }
   componentDidMount() {
-
     try {
-      //try some code
-      console.log('fetching data');
-      const json = localStorage.getItem('options'); //gets options from localStorage
-      const options = JSON.parse(json); // converts options JSON to javascript object
+      const json = localStorage.getItem('options');
+      const options = JSON.parse(json);
 
-      // run if and only if there are options
       if (options) {
-        this.setState(() => ({
-          options
-        }))
+        this.setState(() => ({ options }));
       }
     } catch (e) {
-      //catch errors and do nothing
+      // Do nothing at all
     }
   }
   componentDidUpdate(prevProps, prevState) {
-      // logs when the data length changes
-    if ( prevState.options.length !== this.state.options.length ) {
-        const json = JSON.stringify(this.state.options) // creates variable and converts object to string
-        localStorage.setItem('options', json);  // saves data into (options) localstorage everytime it changes
-        console.log('saving data');
+    if (prevState.options.length !== this.state.options.length) {
+      const json = JSON.stringify(this.state.options);
+      localStorage.setItem('options', json);
     }
-
   }
   componentWillUnmount() {
-    //console.log('componentWillUnmount');
+    console.log('componentWillUnmount');
   }
   handleDeleteOptions() {
     this.setState(() => ({ options: [] }));
@@ -120,10 +81,6 @@ class IndecisionApp extends React.Component {
   }
 }
 
-IndecisionApp.defaultProps = {
-  options: []
-};
-
 const Header = (props) => {
   return (
     <div>
@@ -154,8 +111,7 @@ const Options = (props) => {
   return (
     <div>
       <button onClick={props.handleDeleteOptions}>Remove All</button>
-      {/* note alert message to show before adding options */}
-      {props.options.length === 0 && <p>Please add an option to get started</p>}
+      {props.options.length === 0 && <p>Please add an option to get started!</p>}
       {
         props.options.map((option) => (
           <Option
@@ -200,9 +156,8 @@ class AddOption extends React.Component {
 
     this.setState(() => ({ error }));
 
-    // if no errors clear input after adding option
-    if(!error) {
-      e.target.elements.option.value = ' ';
+    if (!error) {
+      e.target.elements.option.value = '';
     }
   }
   render() {

@@ -113,3 +113,11 @@ COMPONENTS
 ===========
 
 + One component per file
+
+#=============================================
+# REACT MODALS
+#==============================================
+
+INSTALL MODALS
+----------------
+yarn add react-modal

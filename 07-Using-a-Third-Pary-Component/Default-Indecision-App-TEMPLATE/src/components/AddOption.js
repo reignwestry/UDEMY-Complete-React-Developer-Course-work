@@ -4,10 +4,8 @@ export default class AddOption extends React.Component {
   state = {
     error: undefined
   };
-  // REMOVED constructor and converted to new class property
   handleAddOption = (e) => {
     e.preventDefault();
-
     const option = e.target.elements.option.value.trim();
     const error = this.props.handleAddOption(option);
 

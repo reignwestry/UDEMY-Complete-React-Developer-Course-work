@@ -1,12 +1,9 @@
-//SEPARATE BABEL CONFIGURATION FILE
-
-//TELLS BABEL to run every file through the presets
 {
-    "presets" : [
-        "env",
-        "react"
-    ],
-    "plugins": [
-        "transform-class-properties"
-    ]
+  "presets": [
+    "env",
+    "react"
+  ],
+  "plugins": [
+    "transform-class-properties"
+  ]
 }
