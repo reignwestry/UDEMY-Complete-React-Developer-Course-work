@@ -121,3 +121,10 @@ COMPONENTS
 INSTALL MODALS
 ----------------
 yarn add react-modal
+
+
+#======================================
+    STYLING REACT
+#========================================
+    1. Create styles/styles.css in src folder
+    
