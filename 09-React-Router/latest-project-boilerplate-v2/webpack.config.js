@@ -9,11 +9,7 @@ module.exports = {
   module: {
     rules: [{
       loader: 'babel-loader',
-      options: {
-        presets:['@babel/preset-env'],
-        plugins:['@babel/plugin-proposal-object-rest-spread']
-      },
-      test: /\.m?js$/,
+      test: /\.js$/,
       exclude: /node_modules/
     }, {
       test: /\.s?css$/,
@@ -26,6 +22,7 @@ module.exports = {
   },
   devtool: 'cheap-module-eval-source-map',
   devServer: {
-    contentBase: path.join(__dirname, 'public')
+    contentBase: path.join(__dirname, 'public'),
+    historyApiFallback: true
   }
 };

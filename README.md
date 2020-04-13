@@ -11,7 +11,8 @@
     6. Webpack
     7. Using a Third Party Component
     8. Styling React
-    13. Deploying Your Apps
+    9. React-Router
+    10. Deploying Your Apps
     
 
     TEST 1, 2, 3
