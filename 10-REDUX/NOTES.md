@@ -19,3 +19,19 @@
         
 
 ### SETUP REDUX
+    1. Install Redux  ` npm i redux  `
+    2. import { createStore } from 'redux'; 
+    3. Call 'createStore' once
+       A. Setup a single function as the only argument.
+       B. create a store.subscribe to log all of the processes in the console.
+       C. create unsubscribe function to stop the subscription at anytime.
+        
+    4. CREATE functions of the store either by functions (SWITCH CASE or FUNCTION)
+    5. CALL THE store.dispatch() to initiate the function
+    6. 
+
+
+#### REDUX COMPONENTS
+    * createStore == creates a store
+    * getState() == returns the current state object
+    * 
