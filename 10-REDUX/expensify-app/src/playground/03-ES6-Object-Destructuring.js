@@ -28,18 +28,13 @@ const person = {
     }
 };
 
-//SAME as below
-const { name, age } = person;
-//const name = person.name;
-//const age = person.age;
+
 
 console.log(  `It's ${person.location.temp} in ${person.location.city}.+ "(DESTRUCTURING AN OBJECT)"`  );
 
 
 
 
-//* INTERPULATING THE NAME
-console.log(`${person.name} is ${person.age}.`);
 /*
 if ( person.location.city && person.location.temp) {
     console.log(  `It's ${person.location.temp} in ${person.location.city}.`  );
@@ -60,5 +55,29 @@ if ( city && temperature) {
     console.log(  `It's ${temperature} in ${city}.`  );
 }
 
+//SAME as below
+//* SET default value of name to Anonymous
+//? ONLY shows the default value if there is no name value
+// const { name = "Anonymous", age } = person;
+//* SETS local const firstname value to "Anonymous"
+const { name: firstName = "Anonymous", age } = person;
+//const name = person.name;
+//const age = person.age;
 
+//* INTERPULATING THE NAME
+console.log(`${firstName} is ${person.age}.`);
 
+//! ===================================================
+//! CHALLENGE
+//! 1. SET publisherName  = Penguin, default: Self-Published
+
+const book = {
+    title: 'Ego is the Enemy',
+    author: 'Ryan Holiday',
+    publisher: {
+        name: 'Penguin'
+    }
+};
+
+const { name: publisherName = 'Self-Published' } = book.publisher;
+console.log(publisherName); //Penguin, DEFAULT : Self-Published
