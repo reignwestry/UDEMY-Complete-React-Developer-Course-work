@@ -1,12 +1,38 @@
- console.log('07-REDUX-EXPENSIFY'); 
+ console.log('07-ES6 Spread Operator in Reducers'); 
  console.log('//==============//'); 
  
  // combineReducers === Allows you to create multiple functions that define how REDUX changes
  import {createStore, combineReducers} from 'redux';
+ import uuid from 'uuid'; // to generate unique identifiers
 
 //todo ACTIONS TO CREATE
     // ADD_EXPENSE
+    const addExpense = (
+        { 
+            description = '', 
+            note = '', 
+            amount = 0, 
+            createdAt = 0
+        } = {}
+     ) => ({
+        type: 'ADD_EXPENSE',
+        expense: {
+            id: uuid(),
+            description,
+            note,
+            amount,
+            createdAt
+
+        }
+    });
     // REMOVE_EXPENSE
+    const removeExpense = (
+        { id } = {}
+    ) => ({
+        type: 'REMOVE_EXPENSE',
+        id: id
+
+    });
     // EDIT_EXPENSE
     // SET_TEXT_FILTER
     // SORT_BY_DATE
@@ -21,21 +47,28 @@
     const expensesReducer = ( state = expensesReducerDefaultState, action ) => {
         switch (action.type) {
             case 'ADD_EXPENSE':
-                return{
-
-            };
+                //NEVER USE state.push == because it changes state
+                //.concat == combines variables
+                //.push === replaces the last variable to the end of the array
+                //state.concat == combines state with the action without changing state
+                // Spread Operator === [...arrayName, 'newVariable'] == adds the new variable to the end of the array (TEMPERARily) 
+                //return state.concat(action.expense);
+                return [    // returns the array
+                    ...state,   // adds the current state
+                    action.expense  // adds the new state action.expense object
+                ];
+            
             case 'REMOVE_EXPENSE':
-                return{
+                return state.filter(({ id }) => id !== action.id);  // does not change the array but returns a new array
 
-            };
-            case 'EDIT_EXPENSE':
-                return{
+            // case 'EDIT_EXPENSE':
+            //     return{
 
-            };
-            case 'ADD_EXPENSE':
-                return{
+            // };
+            // case 'ADD_EXPENSE':
+            //     return{
 
-            };
+            // };
 
             default:
                 return state;
@@ -91,7 +124,22 @@
         
     );
 
-    console.log(store.getState()); // logs all states to the console
+    store.subscribe(() => {
+        console.log(store.getState());
+    });
+    /**
+     *  DISPATCHED CALLS
+        Dispatched action goes through both reducer
+     */
+    //console.log(store.getState()); // logs all states to the console
+    //store.dispatch(addExpense({ description: 'Rent', amount: 100 }));
+    const expenseOne = store.dispatch(addExpense({ description: 'Rent', amount: 100 }));
+    const expenseTwo = store.dispatch(addExpense({ description: 'Coffee', amount: 300 }));
+    
+    // TO SEE WHAT COMES BACK JUST console.log the variable     console.log(expenseOne)
+    store.dispatch(removeExpense({ id: expenseOne.expense.id }));   //removes expense by id
+
+
     
  const demoState = {
      //PROPERTIES (ARRAY)

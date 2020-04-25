@@ -1,12 +1,41 @@
- console.log('07-REDUX-EXPENSIFY'); 
+ console.log('09-Spreading-Objects'); 
  console.log('//==============//'); 
  
- // combineReducers === Allows you to create multiple functions that define how REDUX changes
+//* IMPORTS
  import {createStore, combineReducers} from 'redux';
+ import uuid from 'uuid'; // to generate unique identifiers
 
-//todo ACTIONS TO CREATE
+//* ACTIONS 
     // ADD_EXPENSE
+    const addExpense = (
+        { 
+            description = '', 
+            note = '', 
+            amount = 0, 
+            createdAt = 0
+        } = {}
+     ) => ({
+        type: 'ADD_EXPENSE',
+        expense: {
+            id: uuid(),
+            description,
+            note,
+            amount,
+            createdAt
+
+        }
+    });
     // REMOVE_EXPENSE
+    const removeExpense = (
+        { id } = {}
+    ) => ({
+        type: 'REMOVE_EXPENSE',
+        id: id
+
+    });
+
+    //todo ACTIONS TO CREATE
+    //todo ======================
     // EDIT_EXPENSE
     // SET_TEXT_FILTER
     // SORT_BY_DATE
@@ -21,21 +50,22 @@
     const expensesReducer = ( state = expensesReducerDefaultState, action ) => {
         switch (action.type) {
             case 'ADD_EXPENSE':
-                return{
-
-            };
+                return [    // returns the array
+                    ...state,   // adds the current state
+                    action.expense  // adds the new state action.expense object
+                ];
+            
             case 'REMOVE_EXPENSE':
-                return{
+                return state.filter(({ id }) => id !== action.id);  // does not change the array but returns a new array
 
-            };
-            case 'EDIT_EXPENSE':
-                return{
+            // case 'EDIT_EXPENSE':
+            //     return{
 
-            };
-            case 'ADD_EXPENSE':
-                return{
+            // };
+            // case 'ADD_EXPENSE':
+            //     return{
 
-            };
+            // };
 
             default:
                 return state;
@@ -91,7 +121,16 @@
         
     );
 
-    console.log(store.getState()); // logs all states to the console
+    store.subscribe(() => {
+        console.log(store.getState());
+    });
+//* DISPATCHED CALLS
+//* ============================================
+    const expenseOne = store.dispatch(addExpense({ description: 'Rent', amount: 100 }));
+    const expenseTwo = store.dispatch(addExpense({ description: 'Coffee', amount: 300 }));
+    store.dispatch(removeExpense({ id: expenseOne.expense.id }));   //removes expense by id
+
+
     
  const demoState = {
      //PROPERTIES (ARRAY)
