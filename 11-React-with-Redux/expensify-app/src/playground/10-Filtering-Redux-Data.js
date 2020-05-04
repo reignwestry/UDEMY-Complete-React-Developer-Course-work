@@ -1,6 +1,11 @@
- console.log('09-Spreading-Objects'); 
+ console.log('10-Filtering REDUX Data'); 
  console.log('//==============//'); 
  
+/*
+todo
+ = Create a single function that sorts and filters data
+*/
+
 //* IMPORTS
  import {createStore, combineReducers} from 'redux';
  import uuid from 'uuid'; // to generate unique identifiers
@@ -48,8 +53,8 @@
         text
     });
 
-    //todo ACTIONS TO CREATE
-    //todo ======================
+    //* ACTIONS TO CREATE
+    //*==========================
     // SORT_BY_DATE
     const sortByDate = ( date = undefined ) => ({
         type: 'SORT_BY_DATE', 
@@ -101,11 +106,6 @@
                     };
                 });
 
-            // case 'ADD_EXPENSE':
-            //     return{
-
-            // };
-
             default:
                 return state;
         }
@@ -154,6 +154,27 @@
                 return state;
         }
     }
+//timestamps  === (wrote in milliseconds) Are positive or negative integers 33400, 10, -203 
+//start on January 1st 1970 (unix epoch (epix)
+
+
+
+//Get Visible expenses
+const getVisibleExpenses = (expenses, { text, sortBy, startDate, endDate }) => {
+    return expenses.filter( (expenses)  => {
+        const startDateMatch = typeof startDate !== 'number' || expenses.createdAt >= startDate;
+        const endDateMatch = typeof endDate !== 'number' || expenses.createdAt <= endDate;
+        
+
+        //todo figure out if expenses.description has the text variable string inside of it
+        //todo includes
+        //todo convert both strings to lower case
+        const textMatch = expenses.description.toLowerCase().includes(text.toLowerCase());
+
+
+        return startDateMatch && endDateMatch && textMatch;
+    });
+};
 
     // Store creation
     const store = createStore(
@@ -167,14 +188,17 @@
     );
 
     store.subscribe(() => {
-        console.log(store.getState());
+        const state = store.getState(); // GETS the entire state
+        const visibleExpenses = getVisibleExpenses(state.expenses, state.filters);
+        console.log(visibleExpenses);
+        //console.log(store.getState());
     });
 //* DISPATCHED CALLS ============================================
 
     // store CALL (actionGenerator(value))
 
-    // const expenseOne = store.dispatch(addExpense({ description: 'Rent', amount: 100 }));
-    // const expenseTwo = store.dispatch(addExpense({ description: 'Coffee', amount: 300 }));
+    const expenseOne = store.dispatch(addExpense({ description: 'Rent', amount: 100 }));
+    const expenseTwo = store.dispatch(addExpense({ description: 'Coffee', amount: 300, createdAt: -1000 }));
 
     // store.dispatch(removeExpense({ id: expenseOne.expense.id }));   //removes expense by id
     // store.dispatch(editExpense(expenseTwo.expense.id, { amount: 500 }));
@@ -182,6 +206,7 @@
     // //! CHALLENGE 
     // //! wire up setTextFilter
     // store.dispatch(setTextFilter('rent'));
+     store.dispatch(setTextFilter('FFEE'));
     // store.dispatch(setTextFilter());
 
     //SORT_BY_DATE
@@ -190,9 +215,9 @@
     // store.dispatch(sortByAmount()); // no need for a value
     
     // SET_START_DATE
-    store.dispatch(setStartDate(125));  //startDate 125
-    store.dispatch(setStartDate());     // start undefined
-    // SET_END_DATE
+    //  store.dispatch(setStartDate(125));  //startDate 125
+    // store.dispatch(setStartDate());     // start undefined
+    // // SET_END_DATE
     store.dispatch(setEndDate(1250));   // endDate 1250
     
  const demoState = {
@@ -218,14 +243,14 @@
 //todo =====================================
 //todo SPREADING OBJECTS
 //todo =======================================
-const user = {
-    name: 'Jen',
-    age: 24
-}
+// const user = {
+//     name: 'Jen',
+//     age: 24
+// }
 
-console.log({
-   age: 26, // gets overrided by the user array age: 24
-    ...user,
-    location: "Atlanta", // ADD location property to the current array: user
-    //age: 27       // Overrides user array age: 24 to new value: 27
-});
+// console.log({
+//    age: 26, // gets overrided by the user array age: 24
+//     ...user,
+//     location: "Atlanta", // ADD location property to the current array: user
+      //age: 27       // Overrides user array age: 24 to new value: 27
+// });
