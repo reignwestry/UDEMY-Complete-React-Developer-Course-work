@@ -82,7 +82,7 @@ todo
         text
     });
 
-    //# ACTIONS TO CREATE
+    //# FILTERS TO CREATE (ACTION GENERATORS)
     //#==========================
     // SORT_BY_DATE
     const sortByDate = ( date = undefined ) => ({
@@ -138,6 +138,8 @@ todo
                 return state;
         }
     };
+
+    //# FILTERS REDUCER
 
     //Filters Reducer DefaultState
     const filtersReducerDefaultState = {
@@ -215,6 +217,7 @@ todo
 
 */
 
+//# SELECTOR
 // Get Visible expenses
 const getVisibleExpenses = (expenses, { text, sortBy, startDate, endDate }) => {
     return expenses.filter( (expense) => {
@@ -251,6 +254,7 @@ const getVisibleExpenses = (expenses, { text, sortBy, startDate, endDate }) => {
     });
 };
 
+//# STORE CONFIGURATION
     // Store creation
     const store = createStore(
         //REDUCERS to combine
