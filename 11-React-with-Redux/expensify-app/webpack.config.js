@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/02-Connecting-Store-and-Component-with-React-Redux.js',
+  entry: './src/03-Rendering-Individual-Expenses.js',
   output: {
     path: path.join(__dirname, 'public'),
     filename: 'bundle.js'
