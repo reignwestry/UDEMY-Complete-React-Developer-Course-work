@@ -21,13 +21,14 @@ import './styles/styles.scss';
 const store = configureStore();
 
 store.dispatch( addExpense({ description: 'Water Bill', amount: 4500 }));
-store.dispatch( addExpense({ description: 'Gas Bill' }));
-store.dispatch( setTextFilter('water') ); // Sorts all of the water and logs them
+store.dispatch( addExpense({ description: 'Gas Bill', createdAt: 1000 }));
+store.dispatch( addExpense({ description: 'Rent', amount: 109500 }));
 
-setTimeout( () => {
-    store.dispatch(setTextFilter('bill'));
+// store.dispatch( setTextFilter('water') ); //# setTextFilter Call = Sorts all of the water and logs them
+// setTimeout( () => {
+//     store.dispatch(setTextFilter('bill'));
     
-}, 3000)  
+// }, 3000)  
 
 const state = store.getState();   // GETS current state
 const visibleExpenses = getVisibleExpenses(state.expenses, state.filters);  // GRABS current state expenses and filters
