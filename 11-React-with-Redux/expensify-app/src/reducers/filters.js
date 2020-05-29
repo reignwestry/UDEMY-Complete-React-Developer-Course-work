@@ -1,12 +1,12 @@
 //# FILTERS REDUCER
-    
+
+import moment from 'moment';
     //Filters Reducer DefaultState
     const filtersReducerDefaultState = {
         text: '',
         sortBy: 'date',
-
-        startDate: undefined,
-        endDate: undefined
+        startDate: moment().startOf('month'), // START of the month
+        endDate: moment().endOf('month')        //END of the month
     };
 
     //# CAN `EXPORT DEFAULT` the reducer directly because there are no dependencies and it is a function

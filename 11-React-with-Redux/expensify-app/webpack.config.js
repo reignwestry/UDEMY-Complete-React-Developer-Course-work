@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/03-Rendering-Individual-Expenses.js',
+  entry: './src/04-Filtering-By-Dates.js',
   output: {
     path: path.join(__dirname, 'public'),
     filename: 'bundle.js'
