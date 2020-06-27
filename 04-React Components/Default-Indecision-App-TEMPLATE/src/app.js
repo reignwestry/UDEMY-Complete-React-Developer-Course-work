@@ -20,7 +20,7 @@ class IndecisionApp extends React.Component {
         <Options options={options}/>
         <AddOption />
       </div>
-    )
+    );
   }
 }
 
