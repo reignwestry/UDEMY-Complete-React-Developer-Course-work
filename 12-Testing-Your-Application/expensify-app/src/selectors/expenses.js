@@ -1,4 +1,4 @@
-//# Selector
+//# expenses Selector
 import moment from 'moment';
 //# Get Visible expenses function
 

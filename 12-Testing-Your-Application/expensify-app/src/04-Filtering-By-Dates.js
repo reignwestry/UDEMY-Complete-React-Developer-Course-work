@@ -1,6 +1,6 @@
-console.log('========================');
-console.log('04-Filtering-By-Dates.js');
-console.log('========================');
+console.log('=======================================');
+console.log('SETTING UP JEST JS TESTING - FILTERS.js');
+console.log('=======================================');
 
 import React from 'react';
 import ReactDOM from 'react-dom';
